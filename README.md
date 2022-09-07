@@ -24,3 +24,5 @@ when we run docker-compose auto-matic network created for all .yml container
 11)https://phoenixnap.com/kb/install-docker-compose-on-ubuntu-20-04  --> uninstall docker
   
 11)https://askubuntu.com/questions/935569/how-to-completely-uninstall-docker
+
+12) https://dockerlabs.collabnix.com/docker/cheatsheet/  --> quite usefull
