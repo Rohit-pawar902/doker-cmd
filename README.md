@@ -26,3 +26,8 @@ when we run docker-compose auto-matic network created for all .yml container
 11)https://askubuntu.com/questions/935569/how-to-completely-uninstall-docker
 
 12) https://dockerlabs.collabnix.com/docker/cheatsheet/  --> quite usefull
+
+13)docker run -it -e MYSQL_ROOT_PASSWORD=moquiroot ff3b5098b416 ->for startting server and then go inside and start the mysql -u -p done
+
+14)docker logs -f moqui-database<container-name>  --> it shows the log when the container thing run internally what is happning inside and what thing failed.
+
