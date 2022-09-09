@@ -31,3 +31,6 @@ when we run docker-compose auto-matic network created for all .yml container
 
 14)docker logs -f moqui-database<container-name>  --> it shows the log when the container thing run internally what is happning inside and what thing failed.
 
+15)docker rmi <image-id>
+
+16) cat and vim cmd works in docker internal opining of container
