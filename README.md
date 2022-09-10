@@ -34,3 +34,5 @@ when we run docker-compose auto-matic network created for all .yml container
 15)docker rmi <image-id>
 
 16) cat and vim cmd works in docker internal opining of container
+
+17)https://jhooq.com/docker-edit-file-inside-container/
