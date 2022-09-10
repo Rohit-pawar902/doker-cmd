@@ -36,3 +36,10 @@ when we run docker-compose auto-matic network created for all .yml container
 16) cat and vim cmd works in docker internal opining of container
 
 17)https://jhooq.com/docker-edit-file-inside-container/
+  
+18)docker exec -u 0 -it 8662ea2fa000 /bin/bash
+docker exec -u 0 -it 8662ea2fa000 /bin/sh
+
+If you do not put the -u 0 flag inside your docker container then you will be logged as appuser and you will not have root privileges and you will not be able to install any new utility inside your docker container.
+and then Install any vim,nano editor
+
