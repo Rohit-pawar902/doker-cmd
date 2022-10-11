@@ -43,3 +43,9 @@ docker exec -u 0 -it 8662ea2fa000 /bin/sh
 If you do not put the -u 0 flag inside your docker container then you will be logged as appuser and you will not have root privileges and you will not be able to install any new utility inside your docker container.
 and then Install any vim,nano editor
 
+19)Networks available -: bridge(private to docker) ,host(public accessable by port) ,overlay(combination of multiple network)
+20)Interesting fact by using the container-name you can access the container ip ,if you are in a same network .example :- you have a container which wants to acesss the mysql so you just have to give name-of-mysql-container instead of ip ,it will recongnize you.
+21)bind-mount - allow your container to connect with local-dir ,and when any changes happen in the local-dir it will reflected in the the container.
+22)Volumes - shared-volumes(you can connect multiple container to one volm ,adv all container will share the same data) ,dedicated-volumes for configurations can exists here .
+23)Docker hub is default registry for docker-host ,you can change it or make you own docker-registry by having a container of it and now you can save your images on that.
+
