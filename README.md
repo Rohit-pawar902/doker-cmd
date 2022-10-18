@@ -8,7 +8,7 @@
 
 4)docker newtwork inspect <newtwork name>
 
-5) docker exec -it <container-id>092c5bc1af9f /bin/bash  -: for execting container and do something from inside
+5)docker exec -it <container-id>092c5bc1af9f /bin/bash  -: for execting container and do something from inside
   
 6)docker images
   
@@ -46,10 +46,19 @@ and then Install any vim,nano editor
 19)Networks available -: bridge(private to docker) ,host(public accessable by port) ,overlay(combination of multiple network)
 20)Interesting fact by using the container-name you can access the container ip ,if you are in a same network .example :- you have a container which wants to acesss the mysql so you just have to give name-of-mysql-container instead of ip ,it will recongnize you.
   
-21)bind-mount - allow your container to connect with local-dir ,and when any changes happen in the local-dir it will reflected in the the container.
+21)bind-mount - allow your container to connect with local-dir ,and when any changes happen in the local-dir it will auto-reflected in the the container.
   
 22)Volumes - shared-volumes(you can connect multiple container to one volm ,adv all container will share the same data) ,dedicated-volumes for configurations can exists here .
   
 23)Docker hub is default registry for docker-host ,you can change it or make you own docker-registry by having a container of it and now you can save your images on that.
   
+24) docker build -t tag-name .
+
+25)docker -t old/name new/name:tag
+
+26)docker exec -it nginx cat filepath / nginx -s reload
+
+27)/root/.docker -> it will contains the genrated credentials.
+
+28).dockerigone error has to find it is most frustrating in terms of building an dockerfile.
 
