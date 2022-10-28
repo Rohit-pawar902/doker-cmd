@@ -62,3 +62,11 @@ and then Install any vim,nano editor
 
 28).dockerigone error has to find it is most frustrating in terms of building an dockerfile.
 
+29)docker volume ls
+
+Unlike bind mount, where you can mount any directory from your host, volumes are stored in a single location (most likely /var/lib/docker/volumes/ on unix systems) and greatly facilitates managing data (backup, restore, and migration). Docker volumes can safely be shared between several running containers.
+You can also save data to a remote server or in cloud Docker volumes with alternative volume drivers like sshfs.
+In addition, Docker enables you to manage volume with the command line docker volume, making their management simple.
+
+Usefull when live project deployed on container so we want to be our data secure and stored in reliable place like cloud.
+
