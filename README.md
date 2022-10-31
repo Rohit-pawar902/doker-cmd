@@ -70,3 +70,6 @@ In addition, Docker enables you to manage volume with the command line docker vo
 
 Usefull when live project deployed on container so we want to be our data secure and stored in reliable place like cloud.
 
+30)bind-mount
+  
+31)tmpfs storage -: temprory storage it would remove when life-cycle would expired or attached docker container stopped.   
