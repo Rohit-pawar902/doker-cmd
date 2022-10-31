@@ -73,3 +73,9 @@ Usefull when live project deployed on container so we want to be our data secure
 30)bind-mount
   
 31)tmpfs storage -: temprory storage it would remove when life-cycle would expired or attached docker container stopped.   
+
+32)Read Only Volume
+docker run -d \
+  --name=nginxtest \
+  -v nginx-vol:/usr/share/nginx/html:ro \
+  nginx:latest
