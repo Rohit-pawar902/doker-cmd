@@ -79,3 +79,7 @@ docker run -d \
   --name=nginxtest \
   -v nginx-vol:/usr/share/nginx/html:ro \
   nginx:latest
+  
+33)docker inspect manifests <container-name>
+  contains all info about image and all layers.
+34)  
