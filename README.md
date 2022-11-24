@@ -1,4 +1,4 @@
-# Doker-cmd
+# Docker-Commands
 
 1).doker ps
 
