@@ -1,0 +1,39 @@
+## Step 1
+
+sudo chmod 777 /etc/apt/sources.list.d
+
+nano kubernetes.list
+
+add
+
+deb https://apt.kubernetes.io/ kubernetes-xenial main
+
+This is added so that on update it will download all **source info of k8s** from this repo and apt-get work fine
+
+----------------------------------------------------------------
+## Step 2
+
+This is for the Key 
+
+sudo curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg| sudo apt-key add
+
+OK
+
+----------------------------------------------------------------
+## Step 3
+
+apt-get update
+
+----------------------------------------------------------------
+
+`Now all source registries info comes and also for K8s`
+`which prev not come`
+`GPG error: https://packages.cloud.google.com/apt kubernetes-xenial InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY B53DC80D13EDEF05`
+
+-----------------------------------------------------------------
+## Step 4
+
+apt-get install -y kubelet kubeadm kubectl kubernetes-cni
+
+-----------------------------------------------------------------
+
