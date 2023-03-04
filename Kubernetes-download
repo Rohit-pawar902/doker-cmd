@@ -80,6 +80,9 @@ kubeadm join 192.168.0.103:6443 --token b7fjjb.z68r8tpw5gpv96wf \
 	--discovery-token-ca-cert-hash sha256:39f6e14c5bf98cfd6d5b0f30660dcee45b474c3954004c65b3fd41202328c143 
 ```
 
+Links:
+https://jhooq.com/14-steps-to-install-kubernetes-on-ubuntu-18-04-and-16-04/
+https://www.youtube.com/watch?v=MyNnVurtSf0
 
 
 
