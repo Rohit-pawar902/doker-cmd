@@ -36,4 +36,29 @@ apt-get update
 apt-get install -y kubelet kubeadm kubectl kubernetes-cni
 
 -----------------------------------------------------------------
+###Step 5 Master initialize
+sudo swap off -d
+
+sudo swapoff -a
+root@rohit:/home/rohit# sudo kubeadm init
+
+Got Error 
+
+resolved here some how
+# Commands from https://kubernetes.io/docs/setup/production-environment/container-runtimes/#containerd
+apt-get update && apt-get install -y apt-transport-https ca-certificates curl software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
+add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+apt-get update && apt-get install -y containerd.io
+
+# Configure containerd
+mkdir -p /etc/containerd
+containerd config default > /etc/containerd/config.toml
+systemctl restart containerd
+
+
+
+
+
+
 
