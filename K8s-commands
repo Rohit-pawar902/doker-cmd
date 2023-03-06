@@ -1,1 +1,4 @@
 kubectl get pods --all-namespaces.
+sudo kubectl get nodes
+sudo kubectl get pods
+
