@@ -14,3 +14,4 @@ helm upgrade [release] [chart] --install : Upgrade a release. If it does not exi
 helm upgrade [release] [chart] --version [version-number] : Upgrade to a specified version
 helm rollback [release] [revision] : Roll back a release
 
+helm upgrade --install --values my-values.yaml superset superset/superset
