@@ -1,0 +1,15 @@
+Vim Editor
+
+1) :!q : Getting out without saving the file
+2) Esc and :wq! :  for getting out from Esc mode 
+3) i for inserting into insert mode.
+
+Moving the Cursor:
+
+Till now, we are using the arrow keys to move the cursor into a file, but it is not recommended to use arrow keys in vim. Vim provides the special key to move the cursor in the vim editor following are the keys used to move into a file.
+
+* k   ->   move up                                                   ^
+* j   ->  move down                                                  k
+* h   -> move right                                           <  h        l >       
+* l   -> move left                                                   j
+                                                                     v
