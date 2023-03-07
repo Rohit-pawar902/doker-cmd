@@ -1,0 +1,16 @@
+https://phoenixnap.com/kb/helm-commands-cheat-sheet
+
+Install And Uninstall
+helm install [app-name] [chart]
+helm install [app-name] [chart] --namespace [namespace]
+helm install [app-name] [chart] --values [yaml-file/url]
+helm install [app-name] --dry-run --debug
+helm uninstall [release]
+
+Perform App Upgrade and Rollback
+helm upgrade [release] [chart] : Upgrade an app
+helm upgrade [release] [chart] --atomic : Instruct Helm to rollback changes if the upgrade fails:
+helm upgrade [release] [chart] --install : Upgrade a release. If it does not exist on the system, install it
+helm upgrade [release] [chart] --version [version-number] : Upgrade to a specified version
+helm rollback [release] [revision] : Roll back a release
+
