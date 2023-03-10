@@ -20,3 +20,24 @@ kubectl describe pod <pod-name> : For inspecting that what is going wrong inside
 kubectl logs <pod-name> : This is checking the logs of container status after starting running and somthing happen .
 
 kubectl edit pod superset-init-db-m5824 : It is used to edit Live maniefest file and auto reflect inside the container. ? ?
+
+=================================================
+Satefull and stateless application :
+
+Replicaset of container is managed by deployment object but it will
+orchestrate only stateless pods/application
+
+So here this comes statefull object which manages replicaset of statefull application.
+
+It allows the orchestration of replicated containers based on the same specifications, but maintains an identity that remains with the Pod through rescheduling. These Pods are no longer interchangeable due to this persistent identifier. However, matching any new Pods to existing volumes allows the state to persist.
+
+kubectl get StatefulSets
+kubectl delete StatefulSets superset-redis-master 
+
+These things are available: - for deleting pod firstly you have to delete these things than only you can delete the pod. 
+Service 
+ReplicaSet
+ReplicaController
+Deployment
+StatefullSet
+=============================================
