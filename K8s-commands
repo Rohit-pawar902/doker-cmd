@@ -17,6 +17,11 @@ To forcefully delete a pod, you can use the kubectl delete pod command with the 
 kubectl delete pod <pod-name> --grace-period=0 --force
 
 kubectl describe pod <pod-name> : For inspecting that what is going wrong inside the pod (but It gives status about container when it does not got to the runnig status , it meet with somthing configuration problem).
+service
+rc
+rs
+deployment
+
 kubectl logs <pod-name> : This is checking the logs of container status after starting running and somthing happen .
 
 kubectl edit pod superset-init-db-m5824 : It is used to edit Live maniefest file and auto reflect inside the container. ? ?
