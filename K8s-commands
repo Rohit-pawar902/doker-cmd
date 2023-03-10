@@ -35,9 +35,10 @@ kubectl get StatefulSets
 kubectl delete StatefulSets superset-redis-master 
 
 These things are available: - for deleting pod firstly you have to delete these things than only you can delete the pod. 
-Service 
-ReplicaSet
-ReplicaController
-Deployment
-StatefullSet
+Service svc
+ReplicaSet rs
+ReplicaController rc
+Deployment 
+StatefullSet 
 =============================================
+
