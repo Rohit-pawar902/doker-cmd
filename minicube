@@ -8,5 +8,5 @@ sudo install minikube-linux-amd64 /usr/local/bin/minikube
 
 sudo minikube start --force
 
-
+Each time we have to start the minkube   : Let me Check.
 https://www.youtube.com/watch?v=QTEIyDHhM3I
