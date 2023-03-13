@@ -1,20 +1,22 @@
 kubectl get pods --all-namespaces. : It shows the system pods which is used for managing the kubernetes data
+kubectl get pods -o wide : It is used for showing all details of pod like ip , lable ,Node and that it.
+
 sudo kubectl get nodes : It shows the active nodes like minikube,kubelet which handles the process of deployment
 sudo kubectl get pods : shows all pods available
 
 https://www.ibm.com/docs/en/cloud-paks/cp-management/2.3.x?topic=monitoring-removing-data-collector-docker-container-kubernetes-pod
 
 kubectl delete pod <podname>
+kubectl delete pod <podname> -c <container-name> : Multiple container is contained inside the container.
+#To forcefully delete a pod, you can use the kubectl delete pod command with the --grace-period=0 flag to immediately terminate the pod without waiting for the default grace period of 30 seconds:
+kubectl delete pod <pod-name> --grace-period=0 --force
 kubectl delete deployment <deploymentname> : If you have created replicas in your deployment file, new pod will be created. If you need to stop the creation of new pods, you need to delete the deployment.
 kubectl get deployment 
-kubectl delete pod <podname> -c <container-name> : Multiple container is contained inside the container.
 
 kubectl exec -it <pod_name> cmd(bash|sh) : works for the pod which has one container.
 kubectl exec -it <pod_name> -c <container-name> cmd(bash|sh) : It is used when the pod contains the multiple container .
 
-To forcefully delete a pod, you can use the kubectl delete pod command with the --grace-period=0 flag to immediately terminate the pod without waiting for the default grace period of 30 seconds:
 
-kubectl delete pod <pod-name> --grace-period=0 --force
 
 kubectl describe pod <pod-name> : For inspecting that what is going wrong inside the pod (but It gives status about container when it does not got to the runnig status , it meet with somthing configuration problem).
 service
@@ -23,7 +25,6 @@ rs
 deployment
 
 kubectl logs <pod-name> : This is checking the logs of container status after starting running and somthing happen .
-
 kubectl edit pod superset-init-db-m5824 : It is used to edit Live maniefest file and auto reflect inside the container. ? ?
 
 =================================================
@@ -46,4 +47,9 @@ ReplicaController rc
 Deployment 
 StatefullSet 
 =============================================
+
+Kubelet explain svc;
+rs
+rc
+
 
