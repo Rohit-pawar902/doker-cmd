@@ -52,4 +52,12 @@ Kubelet explain svc;
 rs
 rc
 
+Scalling replica : 
+1. Kubectl scale rc --replica =5
+
+2. We can use Edit cmd to manipulate replica file and then the replica I think reduced automatically . 
+Kubectl edit pod <Pod_name> . 
+
+3. vi Edit , Kubelet replce -f frc.yml
+
 
