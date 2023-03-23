@@ -1,1 +1,8 @@
+1. variable and assigning value must be space less otherwise it would be the part of either variable or value and this thing is detected and gives as an error by bash .  
+   Token="dsfnjls-sdfdf-sdfsf"
+2. curl
+
+3
+  
+curl --request POST --header "PRIVATE-TOKEN: ${Token}" --header "Content-Type: application/x-www-form-urlencoded" "https://${Gitlab_host}/api/v4/projects/${Project_id}/repository/files/app7%2F${filename}?branch=main&commit_message=doit" --data-urlencode "content=$(cat $file)"
 
