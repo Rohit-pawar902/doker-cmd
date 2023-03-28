@@ -13,4 +13,29 @@
 4. Parameter given is called by using as $1,$2,$3
 
 5.
+curl sends errors to STDERR and will not get captured by $m. The output of curl is sent to STDERR (that gibberish you mentioned).
+
+One solution is to redirect STDERR to STDOUT by adding 2>&1 to your curl invocation in your script:
+
+m=$(curl -u "$user":AP"$pass" -T "$pathA" "$url" 2>&1)
+if [ $? -ne 0 ] ; then
+   echo "Error: ""$m"
+fi
+You could also use the --fail, --silent and --show-errors flags of curl like in this example if all you care about are the errors:
+
+Making curl send errors to stderr and everything else to stdout
+
+and some information about capturing STDERR to $variable in bash scripts:
+
+Bash how do you capture stderr to a variable?.
+
+6. Shabang #!bin/bash  It is special statement which fetch the all declarations of features supported by bash. helped a lot!
+
+7. +,%20 both can be used as query characters inside the curl statement.
+   $( curl --silent --request PUT --header "PRIVATE-TOKEN: ${token}" "https://${gitlabHost}/api/v4/projects/${projectId}/
+   merge_requests/${mergeRequestID}/merge?should_remove_source_branch=true&squash=true
+   &squash_commit_message=Moving+upgrade+data+files+for+release+${releaseTag}" --data "merge_commit_message=Moving+upgrade+data+files")
+   
+
+
 
