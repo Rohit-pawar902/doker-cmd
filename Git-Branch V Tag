@@ -1,0 +1,22 @@
+Git Brnaches and Tag
+Git tags and branches are two key Git concepts that allow developers to work on different versions of a project simultaneously.
+Both play an important role in organizing development work so that changes are easier to track and manage,
+but they serve different purposes in the development process. 
+
+-  Tags are used as markers for significant points in the project timeline, 
+-  whereas branches are separate lines of development that will eventually be merged back into the main application code.
+
+Many development teams that use Git frequently make use of both Git branches and Git tags. Branches allow you to code features or fix bugs without impacting the main code branch, whereas tags are essential for marking a point in time in your code, such as a new release of your application.
+
+Branches and tags work together to optimize your workflow. With CircleCI, they can also add flexibility and functionality to your CI/CD process. You can use them to orchestrate and streamline builds, tests, and deployments and to monitor the performance of high priority builds.
+
+To learn more about how you can use effective branching and tagging strategies alongside best-in-class CI/CD to streamline your software delivery, get started with your free CircleCI account today.
+
+
+Tags are of 2 Types:
+Lightwight
+annotated
+
+Tags are just marker which points the old state of an project , and on some what kind we felt that we are going wrong 
+we can go to that tag(because at that state every thing is good).Book -merker-did'nt understand go back
+History of commits/changes traversal has been easier.
