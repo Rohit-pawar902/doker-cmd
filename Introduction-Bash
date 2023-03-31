@@ -36,6 +36,11 @@
    merge_requests/${mergeRequestID}/merge?should_remove_source_branch=true&squash=true
    &squash_commit_message=Moving+upgrade+data+files+for+release+${releaseTag}" --data "merge_commit_message=Moving+upgrade+data+files")
    
+8. In Curl Api 
+   1.encoding decoding feature
+   2.paging feature page=2&per_page=20
+   3. url-encoding because it is user-friendly.
+   
 
 
 
