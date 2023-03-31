@@ -43,4 +43,5 @@
    
 https://git.hotwax.co/api/v4/projects/161/repository/tags?order_by=name&sort=desc&search=^v3.&page=2&per_page=20
 
+9. Newline "\n" is encoded as "%0D%0A" in query string values
 
