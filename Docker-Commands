@@ -82,4 +82,19 @@ docker run -d \
   
 33)docker inspect manifests <container-name>
   contains all info about image and all layers.
-34)  
+
+Container Troubleshoot like Memeory usage /CPU usage /Block IO-Usage / Network IO usage
+ 
+34)  docker stats <container_name>
+This command will show you the memory usage of the container in real-time. The output will include columns for the container ID, name, CPU usage, memory usage, and network I/O.
+
+To check the CPU usage, you can use the docker stats command with the --no-stream flag:
+docker stats --no-stream <container_name>
+This command will display a one-time report of the container's resource usage, including CPU usage, memory usage, and network I/O.
+
+35) You can Limit resource consuption by the containers so that blocked state will not come.
+
+It's worth noting that you can also configure resource limits for your containers when you create them, 
+which can help prevent them from consuming too many resources. To set resource limits for a container,
+you can use the --memory and --cpus flags when running the docker run command.
+
