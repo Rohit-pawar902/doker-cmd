@@ -98,3 +98,5 @@ It's worth noting that you can also configure resource limits for your container
 which can help prevent them from consuming too many resources. To set resource limits for a container,
 you can use the --memory and --cpus flags when running the docker run command.
 
+ 36) docker cp 7554d9c68c8f:/opt/nifi/nifi-current/conf ./nifi/ : It is used to copy a dir from the container.
+ 
