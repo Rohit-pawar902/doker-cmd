@@ -100,3 +100,6 @@ you can use the --memory and --cpus flags when running the docker run command.
 
  36) docker cp 7554d9c68c8f:/opt/nifi/nifi-current/conf ./nifi/ : It is used to copy a dir from the container.
  
+ 
+ 37) docker exec -it --user root nifi bash : It is used when you got previledges error/Permission-denied , or it is not possible apply cmds. 
+ 
