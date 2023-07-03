@@ -102,4 +102,5 @@ you can use the --memory and --cpus flags when running the docker run command.
  
  
  37) docker exec -it --user root nifi bash : It is used when you got previledges error/Permission-denied , or it is not possible apply cmds. 
- 
+
+ 38) docker run -p 8088:80 --name moquisp88 moqui5
