@@ -1,4 +1,4 @@
-Git Brnaches and Tag
+Git Branches and Tag
 Git tags and branches are two key Git concepts that allow developers to work on different versions of a project simultaneously.
 Both play an important role in organizing development work so that changes are easier to track and manage,
 but they serve different purposes in the development process. 
@@ -14,17 +14,28 @@ To learn more about how you can use effective branching and tagging strategies a
 
 
 Tags are of 2 Types:
-Lightwight
+Lightweight
 annotated
 
-Tags are just marker which points the old state of an project, and on somewhat kind we felt that we were going wrong 
+Tags are just marker that points the old state of a project, and on somewhat kind we felt that we were going wrong 
 we can go to that tag(because at that state everything is good).Book -merker-did'nt understand go back
 History of commits/changes traversal has been easier.
 
 
-1. git config credential.helper
+1. git config credential.helper store: It will cache the credential so next time you don't have to enter.
 2. git config --global user.password "TOKEN"
 3. git remote -v
 4. git remote add origin1 ""
 5. git push origin1
  
+6. git reset --soft head^
+7. git restore --staged
+8. git stash pop
+9. git stash push - path/file
+10. git reset --hard head^
+
+11. git stash list : Show the files in the most recent stash:
+12. git stash show: Show the changes of the most recent stash:
+13. git stash show -p
+14. git stash show -p stash@{1} : Show the changes of the named stash:
+15. git stash show -p 1  : Or in short
