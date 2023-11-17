@@ -39,3 +39,7 @@ History of commits/changes traversal has been easier.
 13. git stash show -p
 14. git stash show -p stash@{1} : Show the changes of the named stash:
 15. git stash show -p 1  : Or in short
+
+16. git stash drop            # drop top hash, stash@{0}
+17. git stash drop stash@{n}
+18. git stash clear
