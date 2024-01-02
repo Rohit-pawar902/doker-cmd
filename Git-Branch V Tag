@@ -22,7 +22,7 @@ we can go to that tag(because at that state everything is good).Book -merker-did
 History of commits/changes traversal has been easier.
 
 
-1. git config credential.helper store: It will cache the credential so next time you don't have to enter.
+1. git config credential.helper store: It will cache the credential so next time you don't have to enter. you can change locally
 2. git config --global user.password "TOKEN"
 3. git remote -v
 4. git remote add origin1 ""
