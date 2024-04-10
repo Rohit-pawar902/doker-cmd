@@ -1,3 +1,11 @@
+### Good to Know while interacting with ubuntu/Linux
+
+Updating the package lists with apt update ensures that you're installing the latest version of jq available in the repositories configured on your system. Even though you might have run apt update a month ago, new versions of packages could have been released since then.
+
+However, if you're confident that the package lists are up-to-date and you're okay with potentially not getting the latest version of jq, you can skip the apt update step. In many cases, it's good practice to ensure your package lists are current to avoid potential issues with outdated package information.
+
+### Basic Linux day-to-day cmds
+
 1. netstat -ltnp | grep -w ':80'  --> for checking ports
 2. scp -rv rohit.pawar@172.20.20.8:/home/rohit.pawar/rohit ./  ---> server copying things
 3. cp -rv source destination
