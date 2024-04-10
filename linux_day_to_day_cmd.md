@@ -1,5 +1,5 @@
 ### Good to Know while interacting with ubuntu/Linux
-## Why to run `sudo apt update` every time ?
+#### Why to run `sudo apt update` every time ?
 
 Updating the package lists with apt update ensures that you're installing the latest version of jq available in the repositories configured on your system. Even though you might have run apt update a month ago, new versions of packages could have been released since then.
 However, if you're confident that the package lists are up-to-date and you're okay with potentially not getting the latest version of jq, you can skip the apt update step. In many cases, it's good practice to ensure your package lists are current to avoid potential issues with outdated package information.
